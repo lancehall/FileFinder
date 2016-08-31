@@ -1,0 +1,16 @@
+c:\users\lance\documents\visual studio 2015\Projects\FileFinder\FileFinder\obj\Debug\FileFinder.csprojResolveAssemblyReference.cache
+c:\users\lance\documents\visual studio 2015\Projects\FileFinder\FileFinder\obj\Debug\FileFinder.Form1.resources
+c:\users\lance\documents\visual studio 2015\Projects\FileFinder\FileFinder\obj\Debug\FileFinder.csproj.GenerateResource.Cache
+C:\Users\Lance\Documents\Visual Studio 2015\Projects\FileFinder\FileFinder\bin\Debug\LorenzFileFinder.exe.config
+C:\Users\Lance\Documents\Visual Studio 2015\Projects\FileFinder\FileFinder\bin\Debug\LorenzFileFinder.exe.manifest
+C:\Users\Lance\Documents\Visual Studio 2015\Projects\FileFinder\FileFinder\bin\Debug\LorenzFileFinder.application
+C:\Users\Lance\Documents\Visual Studio 2015\Projects\FileFinder\FileFinder\bin\Debug\LorenzFileFinder.exe
+C:\Users\Lance\Documents\Visual Studio 2015\Projects\FileFinder\FileFinder\bin\Debug\LorenzFileFinder.pdb
+C:\Users\Lance\Documents\Visual Studio 2015\Projects\FileFinder\FileFinder\bin\Debug\System.Net.Http.dll
+C:\Users\Lance\Documents\Visual Studio 2015\Projects\FileFinder\FileFinder\bin\Debug\System.Net.Http.xml
+C:\Users\Lance\Documents\Visual Studio 2015\Projects\FileFinder\FileFinder\obj\Debug\LorenzFileFinder.Properties.Resources.resources
+C:\Users\Lance\Documents\Visual Studio 2015\Projects\FileFinder\FileFinder\obj\Debug\LorenzFileFinder.exe.manifest
+C:\Users\Lance\Documents\Visual Studio 2015\Projects\FileFinder\FileFinder\obj\Debug\LorenzFileFinder.application
+C:\Users\Lance\Documents\Visual Studio 2015\Projects\FileFinder\FileFinder\obj\Debug\LorenzFileFinder.exe
+C:\Users\Lance\Documents\Visual Studio 2015\Projects\FileFinder\FileFinder\obj\Debug\LorenzFileFinder.pdb
+C:\Users\Lance\Documents\Visual Studio 2015\Projects\FileFinder\FileFinder\bin\Debug\mglass.ico
