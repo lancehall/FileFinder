@@ -37,6 +37,7 @@ namespace FileFinder
             textBox1.Text = fbd.SelectedPath;
         }
 
+        //Location of CSV
         static class Global
         {
             private static string _globalVar = "";
@@ -48,6 +49,7 @@ namespace FileFinder
             }
         }
 
+        //Keyword
         static class Global2
         {
             private static string _globalVar = "";
@@ -59,6 +61,7 @@ namespace FileFinder
             }
         }
 
+        //Destingation for copied files
         static class Global5
         {
             private static string _globalVar = "";
@@ -70,6 +73,7 @@ namespace FileFinder
             }
         }
 
+        //Start Date
         static class Date1
         {
             private static DateTime _globalVar;
@@ -80,7 +84,8 @@ namespace FileFinder
                 set { _globalVar = value; }
             }
         }
-
+        
+        //Number of files written to spreadsheet
         static class FilesWritten
         {
             private static int _globalVar;
@@ -92,6 +97,7 @@ namespace FileFinder
             }
         }
 
+        //End Date
         static class Date2
         {
             private static DateTime _globalVar;
@@ -103,6 +109,7 @@ namespace FileFinder
             }
         }
 
+        //File extension
         static class Global3
         {
             private static string _globalVar = "";
@@ -114,6 +121,7 @@ namespace FileFinder
             }
         }
 
+        //if 'true' filter by date
         static class DateFilter
         {
             private static string _globalVar = "";
@@ -125,6 +133,7 @@ namespace FileFinder
             }
         }
 
+        //if filtering by date, 'created' == filter by date created, 'modified' == filter by date modified
         static class Filtertype
         {
             private static string _globalVar = "";
@@ -136,6 +145,7 @@ namespace FileFinder
             }
         }
 
+        //Traverses file tree, copying files that meet criteria to specified destination
         public void TraverseTree(string root)
         {
             int i = 1;
@@ -157,16 +167,7 @@ namespace FileFinder
                 try
                 {
                     subDirs = System.IO.Directory.GetDirectories(currentDir);
-                }
-                // An UnauthorizedAccessException exception will be thrown if we do not have
-                // discovery permission on a folder or file. It may or may not be acceptable 
-                // to ignore the exception and continue enumerating the remaining files and 
-                // folders. It is also possible (but unlikely) that a DirectoryNotFound exception 
-                // will be raised. This will happen if currentDir has been deleted by
-                // another application or thread after our call to Directory.Exists. The 
-                // choice of which exceptions to catch depends entirely on the specific task 
-                // you are intending to perform and also on how much you know with certainty 
-                // about the systems on which this code will run.
+                }                
                 catch (UnauthorizedAccessException e)
                 {
                     Console.WriteLine(e.Message);
@@ -196,13 +197,11 @@ namespace FileFinder
                     Console.WriteLine(e.Message);
                     continue;
                 }
-                // Perform the required action on each file here.
-                // Modify this block to perform your required task.
+                // Perform the required action on each file here.                
                 foreach (string file in files)
                 {
                     try
-                    {
-                        // Perform whatever action is required in your scenario.
+                    {                        
                         System.IO.FileInfo fi = new System.IO.FileInfo(file);
                         if (DateFilter.GlobalVar == "false" && Filtertype.GlobalVar == "created")
                         {
@@ -324,8 +323,7 @@ namespace FileFinder
                     }
                 }
 
-                // Push the subdirectories onto the stack for traversal.
-                // This could also be done before handing the files.
+                // Push the subdirectories onto the stack for traversal.                
                 foreach (string str in subDirs)
                     dirs.Push(str);
             }
@@ -335,6 +333,7 @@ namespace FileFinder
             }
         }
 
+        //Traverse the file tree copying files that meet criteria to specified destination
         public void TraverseTree2(string root)
         {
             int i = 1;
@@ -356,16 +355,7 @@ namespace FileFinder
                 try
                 {
                     subDirs = System.IO.Directory.GetDirectories(currentDir);
-                }
-                // An UnauthorizedAccessException exception will be thrown if we do not have
-                // discovery permission on a folder or file. It may or may not be acceptable 
-                // to ignore the exception and continue enumerating the remaining files and 
-                // folders. It is also possible (but unlikely) that a DirectoryNotFound exception 
-                // will be raised. This will happen if currentDir has been deleted by
-                // another application or thread after our call to Directory.Exists. The 
-                // choice of which exceptions to catch depends entirely on the specific task 
-                // you are intending to perform and also on how much you know with certainty 
-                // about the systems on which this code will run.
+                }                
                 catch (UnauthorizedAccessException e)
                 {
                     Console.WriteLine(e.Message);
@@ -395,13 +385,11 @@ namespace FileFinder
                     Console.WriteLine(e.Message);
                     continue;
                 }
-                // Perform the required action on each file here.
-                // Modify this block to perform your required task.
+                // Perform the required action on each file here.                
                 foreach (string file in files)
                 {
                     try
-                    {
-                        // Perform whatever action is required in your scenario.
+                    {                        
                         System.IO.FileInfo fi = new System.IO.FileInfo(file);
                         if (DateFilter.GlobalVar == "false" && Filtertype.GlobalVar == "created")
                         {
@@ -472,8 +460,7 @@ namespace FileFinder
                     }
                 }
 
-                // Push the subdirectories onto the stack for traversal.
-                // This could also be done before handing the files.
+                // Push the subdirectories onto the stack for traversal.                
                 foreach (string str in subDirs)
                     dirs.Push(str);
             }
